@@ -76,6 +76,7 @@ a {
   border: 1px solid var(--border);
   text-decoration: none;
   font-weight: 700;
+  color: var(--text);
   box-shadow: none;
   transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
   user-select: none;
@@ -94,6 +95,14 @@ a {
 
 .btn--ghost {
   background: rgba(255, 255, 255, 0.04);
+}
+
+button.btn {
+  color: var(--text);
+}
+
+.btn.btn--ghost {
+  color: var(--text);
 }
 
 .btn--sm {
