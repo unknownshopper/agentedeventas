@@ -60,7 +60,7 @@
                 <p class="hero__subtitle">Los precios se muestran solo para evitar errores de cotización y se actualizan conforme a lo publicado en la fuente.</p>
 
                 <div class="hero__chips">
-                    <span class="chip" id="lastUpdated">Actualización: —</span>
+                    <span class="chip" id="lastUpdated">Última actualización de precios: —</span>
                     <span class="chip chip--muted">Sujeto a cambio sin previo aviso</span>
                 </div>
 
@@ -88,6 +88,7 @@
                         <input class="input" id="searchInput" type="search" placeholder="Buscar modelo o versión..." autocomplete="off" />
                         <button class="btn btn--ghost btn--sm" id="downloadCsv" type="button" hidden>Descargar CSV</button>
                         <button class="btn btn--ghost btn--sm" id="downloadPdf" type="button" hidden>Descargar PDF</button>
+                        <a class="btn btn--ghost btn--sm" id="runScrape" href="https://github.com/unknownshopper/agentedeventas/actions/workflows/update_catalogs.yml" target="_blank" rel="noopener noreferrer" hidden>Actualizar precios</a>
                     </div>
                 </div>
 
@@ -125,6 +126,19 @@
 
         function normalize(str) {
             return String(str || '').toLowerCase();
+        }
+
+        function formatLastUpdated(ts) {
+            if (!ts) return null;
+            const s = String(ts).trim();
+            const m = s.match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})/);
+            if (!m) return s;
+            const yy = m[1].slice(-2);
+            const mm = m[2];
+            const dd = m[3];
+            const hh = m[4];
+            const min = m[5];
+            return `${dd}/${mm}/${yy} ${hh}:${min}`;
         }
 
         function render(items) {
@@ -175,6 +189,13 @@
             const show = Boolean(state.brand) && state.filtered && state.filtered.length > 0;
             document.getElementById('downloadCsv').hidden = !show;
             document.getElementById('downloadPdf').hidden = !show;
+            updateScrapeButton();
+        }
+
+        function updateScrapeButton() {
+            const supported = state.brand === 'Toyota' || state.brand === 'Nissan';
+            const btn = document.getElementById('runScrape');
+            btn.hidden = !supported;
         }
 
         function filenamePrefix() {
@@ -363,7 +384,7 @@
             if (!url) {
                 state.items = [];
                 state.filtered = [];
-                document.getElementById('lastUpdated').textContent = 'Actualización: —';
+                document.getElementById('lastUpdated').textContent = 'Última actualización de precios: —';
                 setEmptyMessage('Aún no hay catálogo disponible para esta marca.');
                 render([]);
                 return;
@@ -375,7 +396,8 @@
                 state.items = items;
                 state.filtered = items;
                 const lastUpdated = data.last_updated_at || data.generated_at || null;
-                document.getElementById('lastUpdated').textContent = lastUpdated ? `Actualización: ${lastUpdated}` : 'Actualización: —';
+                const formatted = formatLastUpdated(lastUpdated);
+                document.getElementById('lastUpdated').textContent = formatted ? `Última actualización de precios: ${formatted}` : 'Última actualización de precios: —';
                 setEmptyMessage('No se encontraron modelos para la marca seleccionada.');
                 applyFilters();
                 return;
@@ -392,13 +414,14 @@
                 state.filtered = items;
 
                 const lastUpdated = data.last_updated_at || data.generated_at || null;
-                document.getElementById('lastUpdated').textContent = lastUpdated ? `Actualización: ${lastUpdated}` : 'Actualización: —';
+                const formatted = formatLastUpdated(lastUpdated);
+                document.getElementById('lastUpdated').textContent = formatted ? `Última actualización de precios: ${formatted}` : 'Última actualización de precios: —';
                 setEmptyMessage('No se encontraron modelos para la marca seleccionada.');
                 applyFilters();
             } catch (e) {
                 state.items = [];
                 state.filtered = [];
-                document.getElementById('lastUpdated').textContent = 'Actualización: —';
+                document.getElementById('lastUpdated').textContent = 'Última actualización de precios: —';
                 setEmptyMessage('No se pudo cargar el catálogo.');
                 render([]);
             }
@@ -415,9 +438,10 @@
             });
             document.getElementById('downloadCsv').addEventListener('click', downloadCsv);
             document.getElementById('downloadPdf').addEventListener('click', downloadPdf);
-            document.getElementById('lastUpdated').textContent = 'Actualización: —';
+            document.getElementById('lastUpdated').textContent = 'Última actualización de precios: —';
             setEmptyMessage('Selecciona una marca para ver el catálogo.');
             render([]);
+            updateScrapeButton();
         }
 
         init();
