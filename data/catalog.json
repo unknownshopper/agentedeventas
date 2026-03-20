@@ -1,0 +1,246 @@
+{
+  "generated_at": "2026-02-12 23:01",
+  "last_updated_at": "2026-02-12 23:01",
+  "items": [
+    {
+      "brand": "Toyota",
+      "model": "Yaris Hatchback",
+      "trim": "2025",
+      "price": 316400,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-hatchback-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/yaris-hatchback-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Yaris Sedan",
+      "trim": "2026",
+      "price": 321700,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-sedan-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/yaris-sedan-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Avanza",
+      "trim": "2026",
+      "price": 361300,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/avanza-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/avanza-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Raize",
+      "trim": "2026",
+      "price": 384400,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/raize-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/raize-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Corolla",
+      "trim": "2026",
+      "price": 425600,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/corolla-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/corolla-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Yaris Sedan HEV",
+      "trim": "2026",
+      "price": 440000,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-sedan-hev-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/yaris-sedan-hev-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Hilux",
+      "trim": "2026",
+      "price": 496400,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/hilux-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/hilux-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Prius",
+      "trim": "2026",
+      "price": 506700,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/prius-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/prius-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Corolla HEV",
+      "trim": "2026",
+      "price": 509300,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/corolla-hev-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/corolla-hev-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Corolla Cross",
+      "trim": "2026",
+      "price": 544000,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/corolla-cross-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/corolla-cross-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "RAV4",
+      "trim": "2025",
+      "price": 577100,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/rav4-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/rav4-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Camry HEV",
+      "trim": "2026",
+      "price": 619600,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/camry-hev-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/camry-hev-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Corolla Cross HEV",
+      "trim": "2026",
+      "price": 625900,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/corolla-cross-hev-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/corolla-cross-hev-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Hiace",
+      "trim": "2026",
+      "price": 700700,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/hiace-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/hiace-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Tacoma",
+      "trim": "2025",
+      "price": 777900,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/tacoma-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/tacoma-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "RAV4 HEV",
+      "trim": "2025",
+      "price": 816800,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/rav4-hev-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/rav4-hev-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "GR Yaris",
+      "trim": "2026",
+      "price": 854600,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/gr-yaris-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/gr-yaris-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Highlander HEV",
+      "trim": "2025",
+      "price": 887700,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/highlander-hev-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/highlander-hev-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Sienna HEV",
+      "trim": "2025",
+      "price": 945600,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/sienna-hybrid-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/sienna-hybrid-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Tacoma HEV",
+      "trim": "2025",
+      "price": 1165900,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/tacoma-hev-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/tacoma-hev-25.png"
+      ]
+    }
+  ]
+}

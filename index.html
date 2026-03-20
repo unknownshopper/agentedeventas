@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eltabasqueño.com | Catálogo de autos y atención personalizada</title>
+    <meta name="description" content="Catálogo de autos con precios referenciales y fecha de actualización.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="canonical" href="https://unknownshopper.github.io/eltabasqueno/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="eltabasqueño.com">
+    <meta property="og:title" content="eltabasqueño.com | Catálogo de autos">
+    <meta property="og:description" content="Catálogo de autos con precios referenciales y fecha de actualización.">
+    <meta property="og:url" content="https://unknownshopper.github.io/eltabasqueno/">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:image" content="https://unknownshopper.github.io/eltabasqueno/og.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="eltabasqueño.com | Catálogo de autos">
+    <meta name="twitter:description" content="Catálogo de autos con precios referenciales y fecha de actualización.">
+    <meta name="twitter:image" content="https://unknownshopper.github.io/eltabasqueno/og.png">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "eltabasqueño.com",
+          "url": "https://unknownshopper.github.io/eltabasqueno/",
+          "inLanguage": "es-MX"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "eltabasqueño.com",
+          "url": "https://unknownshopper.github.io/eltabasqueno/"
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.5.31/dist/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="brand">
+                <div class="brand__name">eltabasqueño.com</div>
+                <div class="brand__tagline">Catálogo de autos + atención personalizada</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__inner">
+                <h1 class="hero__title">Encuentra tu próximo auto y cotiza directo conmigo</h1>
+                <p class="hero__subtitle">Los precios se muestran solo para evitar errores de cotización y se actualizan conforme a lo publicado en la fuente.</p>
+
+                <div class="hero__chips">
+                    <span class="chip" id="lastUpdated">Actualización: —</span>
+                    <span class="chip chip--muted">Sujeto a cambio sin previo aviso</span>
+                </div>
+
+                <div class="notice" role="note">
+                    Este sitio no es oficial. Atención independiente y personalizada.
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__header">
+                    <h2 class="catalog__title">Catálogo</h2>
+                    <div class="catalog__filters">
+                        <label class="sr-only" for="brandSelect">Marca</label>
+                        <select class="select" id="brandSelect">
+                            <option value="" selected disabled>Selecciona una marca</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Chrysler">Chrysler</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Honda">Honda</option>
+                        </select>
+                        <input class="input" id="searchInput" type="search" placeholder="Buscar modelo o versión..." autocomplete="off" />
+                        <button class="btn btn--ghost btn--sm" id="downloadCsv" type="button" hidden>Descargar CSV</button>
+                        <button class="btn btn--ghost btn--sm" id="downloadPdf" type="button" hidden>Descargar PDF</button>
+                    </div>
+                </div>
+
+                <div id="catalogGrid" class="grid" aria-live="polite"></div>
+                <div id="catalogEmpty" class="empty" hidden>
+                    Selecciona una marca para ver el catálogo.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__small">© <span id="year"></span> eltabasqueño.com</div>
+            <div class="footer__small">Precios referenciales con fecha de actualización.</div>
+        </div>
+    </footer>
+
+    <script>
+        const state = {
+            items: [],
+            filtered: [],
+            brand: "",
+            cache: {}
+        };
+
+        function formatPrice(value) {
+            if (value === null || value === undefined || value === '') return '—';
+            const n = Number(value);
+            if (Number.isFinite(n)) {
+                return new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 0 }).format(n);
+            }
+            return String(value);
+        }
+
+        function normalize(str) {
+            return String(str || '').toLowerCase();
+        }
+
+        function render(items) {
+            const grid = document.getElementById('catalogGrid');
+            const empty = document.getElementById('catalogEmpty');
+
+            grid.innerHTML = '';
+            if (!items.length) {
+                empty.hidden = false;
+                updateDownloadButtons();
+                return;
+            }
+            empty.hidden = true;
+
+            for (const item of items) {
+                const card = document.createElement('article');
+                card.className = 'card';
+
+                const model = item.model || 'Modelo';
+                const trim = item.trim || '';
+                const title = trim ? `${model} · ${trim}` : model;
+                const price = formatPrice(item.price);
+                const sourceUrl = item.source_url || '';
+
+                const image = (item.images && item.images[0]) ? item.images[0] : '';
+                const imgHtml = image ? `<img class="card__img" src="${image}" alt="${title}" loading="lazy"/>` : `<div class="card__img card__img--placeholder" aria-hidden="true"></div>`;
+
+                card.innerHTML = `
+                    <div class="card__media">${imgHtml}</div>
+                    <div class="card__body">
+                        <h3 class="card__title">${title}</h3>
+                        <div class="card__meta">
+                            <div class="price">${price}</div>
+                            <div class="meta">Precio referencial</div>
+                        </div>
+                        <div class="card__actions">
+                            ${sourceUrl ? `<a class="btn btn--ghost btn--sm" href="${sourceUrl}" target="_blank" rel="noopener noreferrer">Ver fuente</a>` : ''}
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            }
+
+            updateDownloadButtons();
+        }
+
+        function updateDownloadButtons() {
+            const show = Boolean(state.brand) && state.filtered && state.filtered.length > 0;
+            document.getElementById('downloadCsv').hidden = !show;
+            document.getElementById('downloadPdf').hidden = !show;
+        }
+
+        function filenamePrefix() {
+            const brand = (state.brand || 'catalogo').toLowerCase();
+            const d = new Date();
+            const yyyy = String(d.getFullYear());
+            const mm = String(d.getMonth() + 1).padStart(2, '0');
+            const dd = String(d.getDate()).padStart(2, '0');
+            return `${brand}-${yyyy}${mm}${dd}`;
+        }
+
+        function toCsvValue(value) {
+            const s = String(value ?? '').replace(/\r?\n/g, ' ');
+            if (/[",\n]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+            return s;
+        }
+
+        function downloadBlob(filename, blob) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            URL.revokeObjectURL(url);
+        }
+
+        function downloadCsv() {
+            const rows = (state.filtered || []).map((x) => {
+                return {
+                    brand: x.brand || '',
+                    model: x.model || '',
+                    trim: x.trim || '',
+                    price: x.price ?? '',
+                    currency: x.currency || '',
+                    source_url: x.source_url || ''
+                };
+            });
+
+            const header = ['brand', 'model', 'trim', 'price', 'currency', 'source_url'];
+            const lines = [header.join(',')];
+            for (const r of rows) {
+                lines.push(header.map((k) => toCsvValue(r[k])).join(','));
+            }
+
+            const blob = new Blob([lines.join('\n') + '\n'], { type: 'text/csv;charset=utf-8' });
+            downloadBlob(`${filenamePrefix()}.csv`, blob);
+        }
+
+        function blobToDataUrl(blob) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        }
+
+        async function fetchImageDataUrl(url) {
+            if (!url) return null;
+            try {
+                const res = await fetch(url, { mode: 'cors', cache: 'force-cache' });
+                if (!res.ok) return null;
+                const blob = await res.blob();
+                if (!blob.type.startsWith('image/')) return null;
+                const dataUrl = await blobToDataUrl(blob);
+                return { dataUrl, mime: blob.type };
+            } catch (e) {
+                return null;
+            }
+        }
+
+        async function downloadPdf() {
+            const jspdf = window.jspdf;
+            if (!jspdf || !jspdf.jsPDF) {
+                return;
+            }
+
+            const doc = new jspdf.jsPDF({ unit: 'pt', format: 'a4' });
+            const title = `Catálogo ${state.brand || ''}`.trim();
+            const updated = document.getElementById('lastUpdated').textContent || '';
+            doc.setFontSize(14);
+            doc.text(title, 40, 50);
+            doc.setFontSize(10);
+            if (updated) doc.text(updated, 40, 68);
+
+            const items = (state.filtered || []).slice(0, 50);
+            const imageCache = new Map();
+
+            for (let i = 0; i < items.length; i += 1) {
+                const x = items[i];
+                const img = (x.images && x.images[0]) ? x.images[0] : '';
+                if (!img) continue;
+                const data = await fetchImageDataUrl(img);
+                if (data && data.dataUrl) {
+                    imageCache.set(i, data);
+                }
+            }
+
+            const body = items.map((x, idx) => {
+                const model = x.model || '';
+                const trim = x.trim || '';
+                const price = (x.price === null || x.price === undefined || x.price === '')
+                    ? '—'
+                    : new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 0 }).format(Number(x.price));
+                return ['', model, trim, price, x.source_url || ''];
+            });
+
+            doc.autoTable({
+                startY: 85,
+                head: [['Imagen', 'Modelo', 'Versión', 'Precio', 'Fuente']],
+                body,
+                styles: { fontSize: 9, cellPadding: 6 },
+                headStyles: { fillColor: [11, 16, 32] },
+                columnStyles: {
+                    0: { cellWidth: 72 },
+                    4: { cellWidth: 200 }
+                },
+                didParseCell: (data) => {
+                    if (data.section === 'body' && data.column.index === 0) {
+                        data.cell.styles.minCellHeight = 52;
+                    }
+                },
+                didDrawCell: (data) => {
+                    if (data.section !== 'body') return;
+                    if (data.column.index !== 0) return;
+                    const rowIndex = data.row.index;
+                    const imgData = imageCache.get(rowIndex);
+                    if (!imgData || !imgData.dataUrl) return;
+
+                    const padding = 6;
+                    const x = data.cell.x + padding;
+                    const y = data.cell.y + padding;
+                    const w = data.cell.width - padding * 2;
+                    const h = data.cell.height - padding * 2;
+                    try {
+                        doc.addImage(imgData.dataUrl, 'JPEG', x, y, w, h, undefined, 'FAST');
+                    } catch (e) {
+                        try {
+                            doc.addImage(imgData.dataUrl, 'PNG', x, y, w, h, undefined, 'FAST');
+                        } catch (e2) {
+                        }
+                    }
+                }
+            });
+
+            doc.save(`${filenamePrefix()}.pdf`);
+        }
+
+        function applyFilters() {
+            const q = normalize(document.getElementById('searchInput').value);
+            const brand = state.brand;
+
+            if (!brand) {
+                state.filtered = [];
+                render([]);
+                return;
+            }
+
+            state.filtered = state.items.filter((x) => {
+                const matchesBrand = !brand || String(x.brand || '') === brand;
+                if (!matchesBrand) return false;
+                if (!q) return true;
+                return normalize(x.model).includes(q)
+                    || normalize(x.trim).includes(q)
+                    || normalize(x.brand).includes(q);
+            });
+
+            render(state.filtered);
+        }
+
+        function getCatalogUrlForBrand(brand) {
+            if (brand === 'Toyota') return 'data/catalog.json';
+            if (brand === 'Nissan') return 'data/nissan.json';
+            return null;
+        }
+
+        function setEmptyMessage(msg) {
+            const empty = document.getElementById('catalogEmpty');
+            empty.textContent = msg;
+        }
+
+        async function loadCatalogForBrand(brand) {
+            const url = getCatalogUrlForBrand(brand);
+            if (!url) {
+                state.items = [];
+                state.filtered = [];
+                document.getElementById('lastUpdated').textContent = 'Actualización: —';
+                setEmptyMessage('Aún no hay catálogo disponible para esta marca.');
+                render([]);
+                return;
+            }
+
+            if (state.cache[brand]) {
+                const data = state.cache[brand];
+                const items = Array.isArray(data.items) ? data.items : [];
+                state.items = items;
+                state.filtered = items;
+                const lastUpdated = data.last_updated_at || data.generated_at || null;
+                document.getElementById('lastUpdated').textContent = lastUpdated ? `Actualización: ${lastUpdated}` : 'Actualización: —';
+                setEmptyMessage('No se encontraron modelos para la marca seleccionada.');
+                applyFilters();
+                return;
+            }
+
+            try {
+                const res = await fetch(url, { cache: 'no-store' });
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
+                state.cache[brand] = data;
+
+                const items = Array.isArray(data.items) ? data.items : [];
+                state.items = items;
+                state.filtered = items;
+
+                const lastUpdated = data.last_updated_at || data.generated_at || null;
+                document.getElementById('lastUpdated').textContent = lastUpdated ? `Actualización: ${lastUpdated}` : 'Actualización: —';
+                setEmptyMessage('No se encontraron modelos para la marca seleccionada.');
+                applyFilters();
+            } catch (e) {
+                state.items = [];
+                state.filtered = [];
+                document.getElementById('lastUpdated').textContent = 'Actualización: —';
+                setEmptyMessage('No se pudo cargar el catálogo.');
+                render([]);
+            }
+        }
+
+        function init() {
+            document.getElementById('year').textContent = String(new Date().getFullYear());
+            document.getElementById('searchInput').addEventListener('input', applyFilters);
+            document.getElementById('brandSelect').addEventListener('change', (e) => {
+                state.brand = e.target.value;
+                setEmptyMessage('Cargando catálogo...');
+                render([]);
+                loadCatalogForBrand(state.brand);
+            });
+            document.getElementById('downloadCsv').addEventListener('click', downloadCsv);
+            document.getElementById('downloadPdf').addEventListener('click', downloadPdf);
+            document.getElementById('lastUpdated').textContent = 'Actualización: —';
+            setEmptyMessage('Selecciona una marca para ver el catálogo.');
+            render([]);
+        }
+
+        init();
+    </script>
+</body>
+</html>
