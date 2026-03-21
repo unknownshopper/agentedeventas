@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-02-12 23:01",
-  "last_updated_at": "2026-02-12 23:01",
+  "generated_at": "2026-03-21 00:01",
+  "last_updated_at": "2026-03-21 00:01",
   "items": [
     {
       "brand": "Toyota",
       "model": "Yaris Hatchback",
-      "trim": "2025",
-      "price": 316400,
+      "trim": "2026",
+      "price": 320500,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
-      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-hatchback-25",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-hatchback-26",
       "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/yaris-hatchback-25.png"
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/yaris-hatchback-26.png"
       ]
     },
     {
@@ -78,24 +78,12 @@
       "brand": "Toyota",
       "model": "Hilux",
       "trim": "2026",
-      "price": 496400,
+      "price": 497800,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/hilux-26",
       "images": [
         "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/hilux-26.png"
-      ]
-    },
-    {
-      "brand": "Toyota",
-      "model": "Prius",
-      "trim": "2026",
-      "price": 506700,
-      "currency": "MXN",
-      "source_name": "toyotatabasco.com.mx",
-      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/prius-26",
-      "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/prius-26.png"
       ]
     },
     {
@@ -112,6 +100,18 @@
     },
     {
       "brand": "Toyota",
+      "model": "Prius",
+      "trim": "2026",
+      "price": 514700,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/prius-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/prius-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
       "model": "Corolla Cross",
       "trim": "2026",
       "price": 544000,
@@ -120,18 +120,6 @@
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/corolla-cross-26",
       "images": [
         "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/corolla-cross-26.png"
-      ]
-    },
-    {
-      "brand": "Toyota",
-      "model": "RAV4",
-      "trim": "2025",
-      "price": 577100,
-      "currency": "MXN",
-      "source_name": "toyotatabasco.com.mx",
-      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/rav4-25",
-      "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/rav4-25.png"
       ]
     },
     {
@@ -160,9 +148,21 @@
     },
     {
       "brand": "Toyota",
+      "model": "RAV4",
+      "trim": "2026",
+      "price": 650300,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/rav4-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/rav4-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
       "model": "Hiace",
       "trim": "2026",
-      "price": 700700,
+      "price": 717200,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/hiace-26",
@@ -180,18 +180,6 @@
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/tacoma-25",
       "images": [
         "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/tacoma-25.png"
-      ]
-    },
-    {
-      "brand": "Toyota",
-      "model": "RAV4 HEV",
-      "trim": "2025",
-      "price": 816800,
-      "currency": "MXN",
-      "source_name": "toyotatabasco.com.mx",
-      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/rav4-hev-25",
-      "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/rav4-hev-25.png"
       ]
     },
     {
@@ -240,6 +228,66 @@
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/tacoma-hev-25",
       "images": [
         "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/tacoma-hev-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "4runner HEV",
+      "trim": "2025",
+      "price": 1201500,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/4runner-hev-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/4runner-hev-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "4runner Trd",
+      "trim": "2025",
+      "price": 1331400,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/4runner-trd-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/4runner-trd-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Supra",
+      "trim": "2025",
+      "price": 1458900,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/supra-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/supra-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Tundra HEV",
+      "trim": "2025",
+      "price": 1464500,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/tundra-hev-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/tundra-hev-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Sequoia HEV",
+      "trim": "2026",
+      "price": 1710000,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/sequoia-hev-26",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/sequoia-hev-26.png"
       ]
     }
   ]

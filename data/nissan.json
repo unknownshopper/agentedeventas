@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-12 23:22",
-  "last_updated_at": "2026-02-12 23:22",
+  "generated_at": "2026-03-21 00:01",
+  "last_updated_at": "2026-03-21 00:01",
   "items": [
     {
       "brand": "Nissan",
@@ -18,19 +18,19 @@
       "brand": "Nissan",
       "model": "Kicks 2026",
       "trim": "",
-      "price": 562900,
+      "price": 493700,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-kicks",
       "images": [
-        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Kicks/2025/Nissan-Kicks-Hero-Banner.jpg"
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Kicks/2026/Kicks-2026-hero-d.webp"
       ]
     },
     {
       "brand": "Nissan",
       "model": "Kicks Play e-POWER",
       "trim": "",
-      "price": 448900,
+      "price": 496900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-kicks-e-power",
@@ -66,7 +66,7 @@
       "brand": "Nissan",
       "model": "March",
       "trim": "",
-      "price": 231900,
+      "price": 216900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-march.html",
@@ -90,7 +90,7 @@
       "brand": "Nissan",
       "model": "Urvan",
       "trim": "",
-      "price": 645900,
+      "price": 655900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-nv350-urvan.html",
@@ -114,12 +114,12 @@
       "brand": "Nissan",
       "model": "Sentra",
       "trim": "",
-      "price": 428900,
+      "price": 469900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-sentra.html",
       "images": [
-        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Sentra/2024/nissan-sentra-hero-banner-24.jpg"
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/2026/modelos/sentra/overview/nissan-2026-sentra_lava-orange_overview-hero-d.jpg"
       ]
     },
     {
@@ -138,12 +138,12 @@
       "brand": "Nissan",
       "model": "Versa",
       "trim": "",
-      "price": 362900,
+      "price": 382900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-versa.html",
       "images": [
-        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Versa/2023/nissan-versa-hero-banner-2023.jpg"
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/2026/modelos/versa/nissan-2026-versa_aqua-blue_overview-hero-d.jpg"
       ]
     },
     {
