@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-09 11:59",
-  "last_updated_at": "2026-04-09 11:59",
+  "generated_at": "2026-04-10 11:54",
+  "last_updated_at": "2026-04-10 11:54",
   "items": [
     {
       "brand": "Nissan",
       "model": "Frontier",
       "trim": "",
-      "price": 409900,
+      "price": 451900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-frontier",
@@ -16,9 +16,21 @@
     },
     {
       "brand": "Nissan",
+      "model": "Frontier V6 Pro-4x",
+      "trim": "",
+      "price": 1071900,
+      "currency": "MXN",
+      "source_name": "nissandeportiva.com.mx",
+      "source_url": "https://www.nissandeportiva.com.mx/nissan-frontier-v6-pro-4x.html",
+      "images": [
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Frontier_V6_PRO-4X/2022/nissan-2022-frontier_v6_pro_4x-gris_volcanico-almendra-interior-carplay-d.jpg"
+      ]
+    },
+    {
+      "brand": "Nissan",
       "model": "Kicks 2026",
       "trim": "",
-      "price": 462900,
+      "price": 452900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-kicks",
@@ -78,7 +90,7 @@
       "brand": "Nissan",
       "model": "NP300",
       "trim": "",
-      "price": 444900,
+      "price": 409900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-np300.html",
@@ -174,7 +186,7 @@
       "brand": "Nissan",
       "model": "Z",
       "trim": "",
-      "price": 1177900,
+      "price": 1077900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-z.html",
