@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-10 11:54",
-  "last_updated_at": "2026-04-10 11:54",
+  "generated_at": "2026-04-11 11:39",
+  "last_updated_at": "2026-04-11 11:39",
   "items": [
     {
       "brand": "Nissan",
@@ -114,12 +114,12 @@
       "brand": "Nissan",
       "model": "Pathfinder",
       "trim": "",
-      "price": 1121900,
+      "price": 1199900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
-      "source_url": "https://www.nissandeportiva.com.mx/nissan-pathfinder.html",
+      "source_url": "https://www.nissandeportiva.com.mx/nissan-pathfinder",
       "images": [
-        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Pathfinder/2026/nissan-2025-pathfinder_platinum_4wd-rojo_burdeos_bitono-negro-exterior-herobanner_running_carretera-d__1_.jpg"
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Pathfinder/2026/Pathfinder-Banner.jpg"
       ]
     },
     {

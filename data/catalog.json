@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-10 11:54",
-  "last_updated_at": "2026-04-10 11:54",
+  "generated_at": "2026-04-11 11:38",
+  "last_updated_at": "2026-04-11 11:38",
   "items": [
     {
       "brand": "Toyota",
@@ -66,7 +66,7 @@
       "brand": "Toyota",
       "model": "Yaris Sedan HEV",
       "trim": "2026",
-      "price": 440000,
+      "price": 450000,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-sedan-hev-26",
@@ -126,7 +126,7 @@
       "brand": "Toyota",
       "model": "Camry HEV",
       "trim": "2026",
-      "price": 619600,
+      "price": 625600,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/camry-hev-26",
@@ -162,7 +162,7 @@
       "brand": "Toyota",
       "model": "Hiace",
       "trim": "2026",
-      "price": 717200,
+      "price": 732200,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/hiace-26",
@@ -174,7 +174,7 @@
       "brand": "Toyota",
       "model": "Tacoma",
       "trim": "2025",
-      "price": 777900,
+      "price": 779500,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/tacoma-25",
@@ -210,7 +210,7 @@
       "brand": "Toyota",
       "model": "Sienna HEV",
       "trim": "2025",
-      "price": 945600,
+      "price": 997600,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/sienna-hybrid-25",
@@ -222,7 +222,7 @@
       "brand": "Toyota",
       "model": "Tacoma HEV",
       "trim": "2025",
-      "price": 1165900,
+      "price": 1167500,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/tacoma-hev-25",
@@ -234,7 +234,7 @@
       "brand": "Toyota",
       "model": "4runner HEV",
       "trim": "2025",
-      "price": 1201500,
+      "price": 1251700,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/4runner-hev-25",
@@ -246,7 +246,7 @@
       "brand": "Toyota",
       "model": "4runner Trd",
       "trim": "2025",
-      "price": 1331400,
+      "price": 1395300,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/4runner-trd-25",
@@ -256,26 +256,26 @@
     },
     {
       "brand": "Toyota",
-      "model": "Supra",
-      "trim": "2025",
-      "price": 1458900,
-      "currency": "MXN",
-      "source_name": "toyotatabasco.com.mx",
-      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/supra-25",
-      "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/supra-25.png"
-      ]
-    },
-    {
-      "brand": "Toyota",
       "model": "Tundra HEV",
       "trim": "2025",
-      "price": 1464500,
+      "price": 1486000,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/tundra-hev-25",
       "images": [
         "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/tundra-hev-25.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Supra",
+      "trim": "2025",
+      "price": 1508900,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/supra-25",
+      "images": [
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/supra-25.png"
       ]
     },
     {
