@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-15 12:01",
-  "last_updated_at": "2026-04-15 12:01",
+  "generated_at": "2026-04-16 12:04",
+  "last_updated_at": "2026-04-16 12:04",
   "items": [
     {
       "brand": "Toyota",
@@ -233,25 +233,25 @@
     {
       "brand": "Toyota",
       "model": "4runner HEV",
-      "trim": "2025",
+      "trim": "2026",
       "price": 1251700,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
-      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/4runner-hev-25",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/4runner-hev-26",
       "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/4runner-hev-25.png"
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/4runner-hev-26.png"
       ]
     },
     {
       "brand": "Toyota",
       "model": "4runner Trd",
-      "trim": "2025",
+      "trim": "2026",
       "price": 1395300,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
-      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/4runner-trd-25",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/4runner-trd-26",
       "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/4runner-trd-25.png"
+        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/4runner-trd-26.png"
       ]
     },
     {
