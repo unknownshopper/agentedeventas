@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-30 12:19",
-  "last_updated_at": "2026-04-30 12:19",
+  "generated_at": "2026-05-01 12:03",
+  "last_updated_at": "2026-05-01 12:03",
   "items": [
     {
       "brand": "Nissan",
@@ -18,7 +18,7 @@
       "brand": "Nissan",
       "model": "Frontier V6 Pro-4x",
       "trim": "",
-      "price": 1071900,
+      "price": 1021900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-frontier-v6-pro-4x.html",
@@ -102,7 +102,7 @@
       "brand": "Nissan",
       "model": "Urvan",
       "trim": "",
-      "price": 655900,
+      "price": 625900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-nv350-urvan.html",
