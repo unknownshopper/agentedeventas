@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-04 12:23",
-  "last_updated_at": "2026-05-04 12:23",
+  "generated_at": "2026-05-05 12:08",
+  "last_updated_at": "2026-05-05 12:08",
   "items": [
     {
       "brand": "Nissan",
@@ -18,12 +18,12 @@
       "brand": "Nissan",
       "model": "Frontier V6 Pro-4x",
       "trim": "",
-      "price": 1021900,
+      "price": 889900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-frontier-v6-pro-4x.html",
       "images": [
-        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Frontier_V6_PRO-4X/2022/nissan-2022-frontier_v6_pro_4x-gris_volcanico-almendra-interior-carplay-d.jpg"
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Frontier_V6_PRO-4X/2026/Frontier_V6_2026.png"
       ]
     },
     {
@@ -143,7 +143,7 @@
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-v-drive.html",
       "images": [
-        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/V-Drive/2026/nissan-v-drive-hero-banner.jpg"
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/V-Drive/2026/V-Drive-Banner.jpg"
       ]
     },
     {
