@@ -1,29 +1,53 @@
 {
-  "generated_at": "2026-05-18 14:36",
-  "last_updated_at": "2026-05-18 14:36",
+  "generated_at": "2026-05-19 13:57",
+  "last_updated_at": "2026-05-19 13:57",
   "items": [
+    {
+      "brand": "Toyota",
+      "model": "Corolla",
+      "trim": "2026",
+      "price": 428600,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/corolla-26",
+      "images": [
+        "https://toyotatabasco.com.mx/assets/ModelosNuevos/img/Menu-modelos/corolla-26.png"
+      ]
+    },
     {
       "brand": "Toyota",
       "model": "Yaris Hatchback",
       "trim": "2026",
-      "price": 326500,
+      "price": 428600,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-hatchback-26",
       "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/yaris-hatchback-26.png"
+        "https://toyotatabasco.com.mx/assets/ModelosNuevos/img/Menu-modelos/corolla-26.png"
       ]
     },
     {
       "brand": "Toyota",
       "model": "Yaris Sedan",
       "trim": "2026",
-      "price": 327700,
+      "price": 428600,
       "currency": "MXN",
       "source_name": "toyotatabasco.com.mx",
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-sedan-26",
       "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/yaris-sedan-26.png"
+        "https://toyotatabasco.com.mx/assets/ModelosNuevos/img/Menu-modelos/corolla-26.png"
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "model": "Yaris Sedan HEV",
+      "trim": "2026",
+      "price": 428600,
+      "currency": "MXN",
+      "source_name": "toyotatabasco.com.mx",
+      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-sedan-hev-26",
+      "images": [
+        "https://toyotatabasco.com.mx/assets/ModelosNuevos/img/Menu-modelos/corolla-26.png"
       ]
     },
     {
@@ -48,30 +72,6 @@
       "source_url": "https://toyotatabasco.com.mx/autos-nuevos/raize-26",
       "images": [
         "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/raize-26.png"
-      ]
-    },
-    {
-      "brand": "Toyota",
-      "model": "Corolla",
-      "trim": "2026",
-      "price": 428600,
-      "currency": "MXN",
-      "source_name": "toyotatabasco.com.mx",
-      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/corolla-26",
-      "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/corolla-26.png"
-      ]
-    },
-    {
-      "brand": "Toyota",
-      "model": "Yaris Sedan HEV",
-      "trim": "2026",
-      "price": 450000,
-      "currency": "MXN",
-      "source_name": "toyotatabasco.com.mx",
-      "source_url": "https://toyotatabasco.com.mx/autos-nuevos/yaris-sedan-hev-26",
-      "images": [
-        "https://toyotatabasco.com.mx/Assets/ModelosNuevos/img/Menu-modelos/yaris-sedan-hev-26.png"
       ]
     },
     {
