@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23 12:03",
-  "last_updated_at": "2026-05-23 12:03",
+  "generated_at": "2026-05-24 12:06",
+  "last_updated_at": "2026-05-24 12:06",
   "items": [
     {
       "brand": "Nissan",
@@ -24,6 +24,18 @@
       "source_url": "https://www.nissandeportiva.com.mx/nissan-frontier-v6-pro-4x.html",
       "images": [
         "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Frontier_V6_PRO-4X/2026/Nissan-Frontier-V6-PRO-4X-nombre.jpg"
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "model": "Kait",
+      "trim": "",
+      "price": 429990,
+      "currency": "MXN",
+      "source_name": "nissandeportiva.com.mx",
+      "source_url": "https://www.nissandeportiva.com.mx/nissan-kait",
+      "images": [
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Kait/2027/Nissan-Kait-Banner.jpg"
       ]
     },
     {
