@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07 12:24",
-  "last_updated_at": "2026-06-07 12:24",
+  "generated_at": "2026-06-08 14:50",
+  "last_updated_at": "2026-06-08 14:50",
   "items": [
     {
       "brand": "Nissan",
@@ -42,7 +42,7 @@
       "brand": "Nissan",
       "model": "Kicks 2026",
       "trim": "",
-      "price": 452900,
+      "price": 499900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-kicks",
@@ -126,7 +126,7 @@
       "brand": "Nissan",
       "model": "Sentra",
       "trim": "",
-      "price": 469900,
+      "price": 417990,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-sentra.html",
@@ -150,7 +150,7 @@
       "brand": "Nissan",
       "model": "Versa",
       "trim": "",
-      "price": 374900,
+      "price": 309990,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-versa.html",
@@ -174,12 +174,12 @@
       "brand": "Nissan",
       "model": "X-Trail",
       "trim": "",
-      "price": 529900,
+      "price": 569900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-x-trail.html",
       "images": [
-        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/X-Trail/2024/hero-banner-x-trail.jpg"
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/X-Trail/2027/Nissan-X-Trail-Banner.jpg"
       ]
     },
     {
