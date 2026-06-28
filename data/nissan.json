@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27 12:12",
-  "last_updated_at": "2026-06-27 12:12",
+  "generated_at": "2026-06-28 12:19",
+  "last_updated_at": "2026-06-28 12:19",
   "items": [
     {
       "brand": "Nissan",
@@ -186,12 +186,12 @@
       "brand": "Nissan",
       "model": "Z",
       "trim": "",
-      "price": 1077900,
+      "price": 1279900,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-z.html",
       "images": [
-        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Z/Versiones/nissan-2023-z_touring_mt-d.jpg"
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Z/2026/Nissan-Z-Banner.jpg"
       ]
     }
   ]
