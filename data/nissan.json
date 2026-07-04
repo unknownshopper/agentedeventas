@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-03 13:01",
-  "last_updated_at": "2026-07-03 13:01",
+  "generated_at": "2026-07-04 12:11",
+  "last_updated_at": "2026-07-04 12:11",
   "items": [
     {
       "brand": "Nissan",
@@ -48,6 +48,18 @@
       "source_url": "https://www.nissandeportiva.com.mx/nissan-kicks",
       "images": [
         "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Kicks/2026/Kicks-2026-hero-d.webp"
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "model": "Kicks Play e-POWER",
+      "trim": "",
+      "price": 496900,
+      "currency": "MXN",
+      "source_name": "nissandeportiva.com.mx",
+      "source_url": "https://www.nissandeportiva.com.mx/nissan-kicks-e-power",
+      "images": [
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Kicks-e-power/2024/nissan-kicks-play-e-POWER.jpg"
       ]
     },
     {
@@ -168,6 +180,18 @@
       "source_url": "https://www.nissandeportiva.com.mx/nissan-x-trail.html",
       "images": [
         "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/X-Trail/2027/Nissan-X-Trail-Banner.jpg"
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "model": "Z",
+      "trim": "",
+      "price": 1279900,
+      "currency": "MXN",
+      "source_name": "nissandeportiva.com.mx",
+      "source_url": "https://www.nissandeportiva.com.mx/nissan-z.html",
+      "images": [
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Z/2026/Nissan-Z-Banner.jpg"
       ]
     }
   ]
