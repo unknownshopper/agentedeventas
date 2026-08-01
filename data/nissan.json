@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-31 13:02",
-  "last_updated_at": "2026-07-31 13:02",
+  "generated_at": "2026-08-01 12:06",
+  "last_updated_at": "2026-08-01 12:06",
   "items": [
     {
       "brand": "Nissan",
@@ -42,7 +42,7 @@
       "brand": "Nissan",
       "model": "Kicks 2026",
       "trim": "",
-      "price": 499900,
+      "price": 499990,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-kicks",
@@ -198,7 +198,7 @@
       "brand": "Nissan",
       "model": "Z",
       "trim": "",
-      "price": 1279900,
+      "price": 1280100,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-z.html",
