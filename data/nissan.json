@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-11 11:50",
-  "last_updated_at": "2026-08-11 11:50",
+  "generated_at": "2026-08-12 11:53",
+  "last_updated_at": "2026-08-12 11:53",
   "items": [
     {
       "brand": "Nissan",
@@ -12,6 +12,18 @@
       "source_url": "https://www.nissandeportiva.com.mx/nissan-frontier",
       "images": [
         "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Frontier/2023/nissan-frontier-hero-banner.jpg"
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "model": "Frontier V6 Pro-4x",
+      "trim": "",
+      "price": 889900,
+      "currency": "MXN",
+      "source_name": "nissandeportiva.com.mx",
+      "source_url": "https://www.nissandeportiva.com.mx/nissan-frontier-v6-pro-4x.html",
+      "images": [
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Frontier_V6_PRO-4X/2026/Nissan-Frontier-V6-PRO-4X-nombre.jpg"
       ]
     },
     {
@@ -36,6 +48,18 @@
       "source_url": "https://www.nissandeportiva.com.mx/nissan-kicks",
       "images": [
         "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Kicks/2026/Kicks-2026-hero-d.webp"
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "model": "Kicks Play e-POWER",
+      "trim": "",
+      "price": 496990,
+      "currency": "MXN",
+      "source_name": "nissandeportiva.com.mx",
+      "source_url": "https://www.nissandeportiva.com.mx/nissan-kicks-e-power",
+      "images": [
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/Kicks-e-power/2024/nissan-kicks-play-e-POWER.jpg"
       ]
     },
     {
@@ -100,6 +124,18 @@
     },
     {
       "brand": "Nissan",
+      "model": "Sentra",
+      "trim": "",
+      "price": 418100,
+      "currency": "MXN",
+      "source_name": "nissandeportiva.com.mx",
+      "source_url": "https://www.nissandeportiva.com.mx/nissan-sentra.html",
+      "images": [
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/2026/modelos/sentra/overview/nissan-2026-sentra_lava-orange_overview-hero-d.jpg"
+      ]
+    },
+    {
+      "brand": "Nissan",
       "model": "V-Drive",
       "trim": "",
       "price": 296090,
@@ -120,6 +156,18 @@
       "source_url": "https://www.nissandeportiva.com.mx/nissan-versa.html",
       "images": [
         "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/2026/modelos/versa/nissan-2026-versa-red-overview-hero-d.jpg"
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "model": "X-Trail e-Power",
+      "trim": "",
+      "price": 751990,
+      "currency": "MXN",
+      "source_name": "nissandeportiva.com.mx",
+      "source_url": "https://www.nissandeportiva.com.mx/nissan-x-trail-e-power.html",
+      "images": [
+        "https://www.nissandeportiva.com.mx/static/agency-go-virtual/Nissan/X-Trail-e-POWER/2027/x-trail-e-power-Banner.jpg"
       ]
     },
     {
