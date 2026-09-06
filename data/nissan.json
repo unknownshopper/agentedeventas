@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05 13:49",
-  "last_updated_at": "2026-09-05 13:49",
+  "generated_at": "2026-09-06 14:05",
+  "last_updated_at": "2026-09-06 14:05",
   "items": [
     {
       "brand": "Nissan",
@@ -18,7 +18,7 @@
       "brand": "Nissan",
       "model": "Frontier V6 Pro-4x",
       "trim": "",
-      "price": 889900,
+      "price": null,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-frontier-v6-pro-4x.html",
@@ -162,7 +162,7 @@
       "brand": "Nissan",
       "model": "X-Trail e-Power",
       "trim": "",
-      "price": 751990,
+      "price": null,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-x-trail-e-power.html",
@@ -186,7 +186,7 @@
       "brand": "Nissan",
       "model": "Z",
       "trim": "",
-      "price": 1280100,
+      "price": null,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-z.html",
