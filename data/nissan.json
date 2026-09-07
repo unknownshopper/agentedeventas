@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-06 14:05",
-  "last_updated_at": "2026-09-06 14:05",
+  "generated_at": "2026-09-07 16:23",
+  "last_updated_at": "2026-09-07 16:23",
   "items": [
     {
       "brand": "Nissan",
@@ -78,7 +78,7 @@
       "brand": "Nissan",
       "model": "March",
       "trim": "",
-      "price": null,
+      "price": 245990,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-march.html",
@@ -186,7 +186,7 @@
       "brand": "Nissan",
       "model": "Z",
       "trim": "",
-      "price": null,
+      "price": 1280100,
       "currency": "MXN",
       "source_name": "nissandeportiva.com.mx",
       "source_url": "https://www.nissandeportiva.com.mx/nissan-z.html",
